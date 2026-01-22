@@ -1,74 +1,78 @@
-# AI-Powered Job Tracker
+AI-Powered Job Tracker with Smart Matching
+Overview
+AI-Powered Job Tracker with Smart Matching is a web-based application that allows users to upload their resume and receive intelligent job recommendations based on skills, experience, and role relevance. The system focuses on clean UI/UX, structured frontend logic, and AI-ready architecture.
 
-This project is a simple job tracker with smart matching. It shows job cards and match score based on your resume.  
+Key Features
+- Resume-based job tracking
+- Smart job matching logic
+- Clean and responsive UI
+- Scalable frontend structure
+- AI integration ready architecture
+- Easy-to-use single page interface
 
-You can upload your resume and see best job matches. Also, you can filter jobs by role, skills, location, date, job type and mode.  
+##Tech Stack
+- Frontend: HTML5, CSS3, JavaScript
+- Version Control: Git, GitHub
+- Deployment: Static hosting (GitHub Pages compatible)
+- AI Layer: Logic-ready for future AI/ML integration
 
-There is an AI chat to help you search or explain match scores.  
+## Application Flow
+1. User opens the application
+2. User uploads resume
+3. Resume data is processed
+4. Matching logic evaluates relevant jobs
+5. Best-matched jobs are displayed to the user
 
-Popup comes after you click apply. You can mark applied, browsing or applied earlier.  
+System Architecture Diagram
+     +----------------+
+     |     User       |
+     +----------------+
+             |
+             v
+ +----------------------+
+ |   Web UI (HTML/CSS/JS)  |
+ +----------------------+
+             |
+             v
+ +----------------------+
+ | Resume Upload &      |
+ | Parsing Logic        |
+ +----------------------+
+             |
+             v
+ +----------------------+
+ | Smart Matching Engine|
+ +----------------------+
+             |
+             v
+ +----------------------+
+ | Matched Job Results  |
+ +----------------------+
 
-## Features
-- Resume upload (PDF/TXT)
-- Job feed with AI match scores
-- Filters working for all categories
-- Smart popup flow for applied status
-- AI chat assistant (can answer questions)
-- Enter key sends message, Escape key closes chat
-- Color badges for high, medium and low match
-- Dashboard shows all applied jobs (basic demo)
+Folder Structure
+- index.html → Main application UI
+- README.md → Project documentation
+- assets/ → (Optional for future enhancements)
 
-## Architecture
-- Frontend: HTML, CSS, JS
-- AI logic: simple JS simulation for matching
-- Job feed: static data (mock API can be added)
-- Popup & chat: JS handling interactions
+UI/UX Considerations
+- Minimal and clean layout
+- Clear call-to-action buttons
+- Easy navigation
+- User-friendly resume upload section
+- Readable typography and spacing
 
-## Setup
-1. Clone repo
-2. Open `index.html` in browser
-3. Upload resume and test filters
-4. Click Apply on job cards to see popup
-5. Open AI chat to ask questions
+Future Enhancements
+- Backend integration using Node.js
+- Database for job tracking
+- AI-based resume parsing
+- Advanced recommendation engine
+- Authentication and user profiles
 
-## AI Matching Logic
-- JS calculates score based on skills overlap and role match
-- High: >70%, Medium: 40-70%, Low: <40%
-- Shows reason why job matched
+Deployment
+The project can be deployed using GitHub Pages or any static hosting platform.
 
-## Popup Flow
-- Click Apply → popup asks applied status
-- User can mark Yes, No or Applied Earlier
-- Status saved in memory (demo)
-- Shows timestamp in real version
+##Author
+Ashutosh Bhardwaj  
+GitHub: https://github.com/ashutoshbhardwajpm  
+Contact: +91 8859778889
 
-## Filters
-- Role/Title
-- Skills multi-select
-- Date Posted
-- Job Type
-- Work Mode
-- Location
-- Match Score (High, Medium, Low)
-
-## Scalability
-- Can handle 100 jobs in feed
-- Can scale for 10,000 users with backend and DB
-
-## Tradeoffs
-- Demo uses static JS, no DB
-- AI logic is simulated
-- Popup tracking is temporary
-
-## Must Have Deliverables
-- ✅ Live deployed project
-- ✅ GitHub repo
-- ✅ Architecture diagram in README
-- ✅ All filters functional
-- ✅ AI match scores showing
-- ✅ Smart popup flow working
-- ✅ AI chat functional
-
----
-
-This is a demo project for TC Consulting Services assignment. Some minor typos included like "tyhoddsa" etc for human feel.
